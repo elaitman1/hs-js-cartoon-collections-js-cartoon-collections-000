@@ -39,6 +39,7 @@ function longPlaneteerCalls(words) {
 
 function findTheCheese (foods) {
 var cheeses = ["cheddar", "gouda","camembert"]
+
 // for(var x = 0; x<foods.length; x++){
 //   for(var i = 0; i < cheeses.length; i++){
 //       if (cheeses[i] === foods[x]){
@@ -48,6 +49,17 @@ var cheeses = ["cheddar", "gouda","camembert"]
 //     }
 //   }
   // return "no cheese!"
+
+for(var x = 0; x<foods.length; x++){
+  for(var i = 0; i < cheeses.length; i++){
+      if (cheeses[i] === foods[x]){
+        x+=foods.length
+      return foods[x];
+      }
+    }
+  }
+  return "no cheese!"
+>>>>>>> 7e33f2494fc5e894a7cae47bb415a094394d1c65
   for(var i = 0; i < foods.length; i++){
     for(var x = 0; x< cheeses.length; x++){
       if (foods[i] === cheeses[x]){
@@ -56,5 +68,9 @@ var cheeses = ["cheddar", "gouda","camembert"]
       }
     }
   }
+<<<<<<< HEAD
 return "no cheese!";
+=======
+
+>>>>>>> 7e33f2494fc5e894a7cae47bb415a094394d1c65
 }
